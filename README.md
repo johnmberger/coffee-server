@@ -1,7 +1,5 @@
-# Token-Based Authentication with Node
+# NEAP Server-side
 
-## Getting Started
+https://coffees.herokuapp.com/coffee
 
-1. Fork/Clone
-1. Install dependencies
-1. `gulp`
+This is the server-side of a Full-Stack NEAP (Node.js, Express, AngularJS, PostgreSQL) Application.
