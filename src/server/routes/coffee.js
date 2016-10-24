@@ -10,7 +10,13 @@ router.get('/', (req, res, next) => {
 
 router.get('/:id', (req, res, next) => {
   getOne('coffee', req.params.id)
-  .then(coffee => res.status(200).json({ status: 'success', data: coffee }))
+  .then(coffee => {
+    if (coffee) {
+      res.status(200).json({ status: 'success', data: coffee });
+    } else {
+      res.status(404).json({ status: 'error', message: 'not found' });
+    }
+  })
   .catch(err => next(err));
 });
 

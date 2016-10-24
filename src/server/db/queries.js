@@ -5,7 +5,7 @@ function getAll(table) {
 }
 
 function getOne(table, id) {
-  return knex(table).where('id', id);
+  return knex(table).where('id', id).first();
 }
 
 module.exports = { getAll, getOne };
