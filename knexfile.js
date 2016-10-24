@@ -1,4 +1,4 @@
-const databaseName = 'node_token_auth';
+const databaseName = 'neap_coffee';
 
 module.exports = {
   development: {
