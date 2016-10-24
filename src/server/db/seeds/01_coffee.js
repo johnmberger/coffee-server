@@ -12,8 +12,7 @@ exports.seed = function(knex, Promise) {
           roast: 'Medium',
           caffeine: 145,
           decaf: false,
-          price: 8,
-          quantity: 1
+          price: 8
         }),
         knex('coffee').insert({
           name: 'Breakfast Blend',
@@ -22,8 +21,7 @@ exports.seed = function(knex, Promise) {
           roast: 'Light',
           caffeine: 160,
           decaf: false,
-          price: 9,
-          quantity: 1
+          price: 9
         }),
         knex('coffee').insert({
           name: 'Veranda Blend',
@@ -32,8 +30,7 @@ exports.seed = function(knex, Promise) {
           roast: 'Blonde',
           caffeine: 220,
           decaf: false,
-          price: 12,
-          quantity: 1
+          price: 12
         }),
         knex('coffee').insert({
           name: 'Willow',
@@ -42,8 +39,7 @@ exports.seed = function(knex, Promise) {
           roast: 'Blonde',
           caffeine: 230,
           decaf: false,
-          price: 13,
-          quantity: 1
+          price: 13
         }),
         knex('coffee').insert({
           name: 'Tano Batak',
@@ -52,8 +48,7 @@ exports.seed = function(knex, Promise) {
           roast: 'Medium',
           caffeine: 180,
           decaf: false,
-          price: 15,
-          quantity: 1
+          price: 15
         }),
         knex('coffee').insert({
           name: 'Berlina',
@@ -62,8 +57,7 @@ exports.seed = function(knex, Promise) {
           roast: 'Dark',
           caffeine: 190,
           decaf: false,
-          price: 13,
-          quantity: 1
+          price: 13
         }),
         knex('coffee').insert({
           name: 'Great Value',
@@ -72,8 +66,7 @@ exports.seed = function(knex, Promise) {
           roast: 'Medium',
           caffeine: 105,
           decaf: true,
-          price: 4,
-          quantity: 1
+          price: 4
         }),
         knex('coffee').insert({
           name: 'Ndimaini',
@@ -82,8 +75,7 @@ exports.seed = function(knex, Promise) {
           roast: 'Light',
           caffeine: 205,
           decaf: false,
-          price: 15,
-          quantity: 1
+          price: 15
         }),
         knex('coffee').insert({
           name: 'Kick Ass',
@@ -92,8 +84,7 @@ exports.seed = function(knex, Promise) {
           roast: 'Dark',
           caffeine: 175,
           decaf: false,
-          price: 14,
-          quantity: 1
+          price: 14
         }),
         knex('coffee').insert({
           name: 'Natural High',
@@ -102,8 +93,7 @@ exports.seed = function(knex, Promise) {
           roast: 'Light',
           caffeine: 10,
           decaf: true,
-          price: 7,
-          quantity: 1
+          price: 7
         })
       ]);
     });

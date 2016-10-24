@@ -8,7 +8,6 @@ exports.up = (knex, Promise) => {
     table.integer('caffeine').notNullable();
     table.boolean('decaf').notNullable();
     table.integer('price').notNullable();
-    table.integer('quantity').notNullable();
     table.timestamp('created_at').notNullable().defaultTo(knex.raw('now()'));
   });
 };
