@@ -21,9 +21,8 @@ router.get('/:id', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-  console.log(req.body);
-  res.json('hi!');
-  // newItem('coffee', req.body)
+  newItem('coffee', req.body)
+  .then(data => res.status(201).json({status: '201', message: 'Coffee Created'}));
 })
 
 module.exports = router;
