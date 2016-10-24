@@ -14,7 +14,7 @@ router.get('/:id', (req, res, next) => {
     if (coffee) {
       res.status(200).json({ status: 'success', data: coffee });
     } else {
-      res.status(404).json({ status: 'error', message: 'not found' });
+      res.status(404).json({ status: '404', message: 'Coffee Not Found' });
     }
   })
   .catch(err => next(err));
