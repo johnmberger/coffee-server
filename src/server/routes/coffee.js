@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getAll, getOne } = require('../db/queries');
+const { getAll, getOne, newItem } = require('../db/queries');
 
 router.get('/', (req, res, next) => {
   getAll('coffee')
@@ -19,5 +19,11 @@ router.get('/:id', (req, res, next) => {
   })
   .catch(err => next(err));
 });
+
+router.post('/', (req, res, next) => {
+  console.log(req.body);
+  res.json('hi!');
+  // newItem('coffee', req.body)
+})
 
 module.exports = router;

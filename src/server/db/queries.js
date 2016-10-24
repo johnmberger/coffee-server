@@ -8,4 +8,8 @@ function getOne(table, id) {
   return knex(table).where('id', id).first();
 }
 
-module.exports = { getAll, getOne };
+function newItem(table, item) {
+  return knex(table).insert(item);
+}
+
+module.exports = { getAll, getOne, newItem };
